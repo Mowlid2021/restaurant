@@ -1,0 +1,26 @@
+.notfound{
+    margin: 10px 150px;
+}
+.notfound  img{
+    width:100%;
+    height: 30rem;
+    margin: auto;
+    text-align: center;
+}
+.notfound span{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+     padding: 10px;
+    background: orange;
+    cursor: pointer;
+}
+@media screen and (max-width: 760px) {
+    .notfound{
+        margin: 30px;
+    }
+    .notfound img{
+        width: 100%;
+        height: 50%;
+    }
+}

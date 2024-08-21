@@ -1,0 +1,141 @@
+#allProducts {
+  padding: 20px;
+}
+
+#allProducts .container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  background-color: rgba(255, 255, 255, 0.8);
+  padding: 20px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  gap: 20px;
+}
+
+#allProducts .container .productsimage {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+  background: #f3f3f3;
+  padding: 20px;
+  border-radius: 20px;
+}
+
+
+#allProducts .container .social span {
+  display: flex;
+  justify-content: center;
+  margin: auto;
+  gap: 30px;
+  background: #f3f4f3;
+  border-radius: 20px;
+  padding: 5px 20px;
+}
+#allProducts .container .social svg:hover{
+  transform: scale(1.4);
+  transition: .4s;
+  color: blue;
+}
+#allProducts .container img {
+  width: 100%;
+  height: auto;
+  max-width: 400px;
+  margin-bottom: 10px;
+  border-radius: 20px;
+}
+
+#allProducts .container h1 {
+  font-size: 1em;
+  color: #333;
+}
+
+#allProducts .container p {
+  font-size: 1.em;
+  color: #666;
+  margin-bottom: 10px;
+}
+
+#allProducts .container svg {
+  font-size: 2em;
+  color: #333;
+  margin-top: 10px;
+}
+
+#allProducts .allproducts {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  justify-content: center;
+}
+
+/* Responsive styles */
+@media (max-width: 767px) {
+  #allProducts .container .heroimage {
+    display: none;
+  }
+
+  #allProducts .allproducts {
+    display: grid;
+    grid-template-columns: 1fr 1fr !important;
+    justify-content: center;
+    padding: 20px;
+  }
+}
+#allProducts .whatsapp{
+  position: fixed;
+  top: 0;
+  left: 0;
+  margin: 500px 20px;
+  color: purple;
+  cursor: pointer;
+}
+#allProducts .whatsapp:hover{
+  color: orange;
+}
+#allProducts .whatsapp::after{
+  content: '';
+  width: 15px;
+  height: 15px;
+  background: lightgreen;
+  position: fixed;
+  border-radius: 50%;
+  top: 0;
+  left: 0;
+  margin: 525px 15px;
+  border: 1px solid blue;
+}
+#allProducts .whatsapp::before{
+  content: "Help";
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  margin: 145px 25px;
+  font-family: serif;
+
+}
+@media (min-width: 768px) {
+  #allProducts .container {
+    flex-direction: row;
+    justify-content: space-around;
+    text-align: left;
+  }
+
+  #allProducts .container span {
+    flex: 1;
+    align-items: flex-start;
+    margin-bottom: 0;
+  }
+
+  #allProducts .container h1 {
+    font-size: 2.em;
+  }
+
+  #allProducts .container p {
+    font-size: 1.em;
+    margin: auto;
+  }
+}

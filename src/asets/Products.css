@@ -1,0 +1,74 @@
+#allproductslist {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  margin: 10px;
+  width: 200px; /* Adjust this value as needed */
+}
+
+#allproductslist:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+#allproductslist .container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 15px;
+}
+
+#allproductslist img {
+  width: 100%;
+  height: auto;
+  border-bottom: 1px solid #ddd;
+}
+
+#allproductslist .container .price {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+#allproductslist .activeoder {
+  background-color: purple;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  cursor: pointer;
+  scale: 1.1;
+  transition: 1s;
+}
+
+#allproductslist .notactiveoder {
+  background-color: orange;
+  scale: 1.3;
+  transition: 0.5s;
+  width: 50px;
+  height: 25px;
+  border: 1px solid black;
+  color: white;
+  font-size: 23px;
+  border-radius: 3px;
+}
+
+#allproductslist button:hover {
+  background-color: #ff4b4b;
+}
+
+@media (max-width: 767px) {
+  #allproductslist {
+    display: grid;
+    justify-content: center;
+    margin: auto;
+  }
+
+  #allproductslist .container .heroimage {
+    display: none;
+  }
+}

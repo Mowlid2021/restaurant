@@ -1,0 +1,100 @@
+
+.footer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: rgba(11, 10, 10, 0.888);
+    /* color: white; */
+    padding: 20px;
+    gap: 15px;
+    color: wheat;
+}
+.footer .left{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    padding: 10px;
+}
+.footer .left .first-items{
+    display: flex;
+    flex-direction: column;
+    flex-basis: 70%;
+    align-items: center;
+    padding: 15px;
+    line-height: 1.3;
+    font-family: arial;
+}
+.footer .left .first-items span{
+    display: flex;
+    justify-content: flex-start;
+    font-size: 30px;
+    gap: 4px;
+    width: fit-content;
+}
+.footer .left .first-items span .mow{
+    color: yellow;
+}
+.footer .left .fist-items span .liid{
+    color:antiquewhite;
+}
+.footer .left .seccond-items{
+    display: flex;
+    gap: 10px;
+    font-size: 28px;  
+}
+.footer .left .seccond-items a { color: orange !important; }
+.footer .left .seccond-items a:hover{
+    scale: 1.4;
+    transition: 0.4s;
+    color: blue;
+}
+
+.footer .right{
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  align-items: center;
+  padding: 20px;
+ }
+.footer .right .first-items{
+    margin-left: 50px;
+    line-height: 1.4;
+}
+.footer .right .first-items h3 a{
+    color: white;
+    margin: 10px;text-decoration: none;
+}
+.footer .right .seccond-items{
+    display: flex;
+    justify-content: space-between;
+    font-size: 20px;
+    gap: 25px;
+    margin-right: 25px;
+}
+.footer .right .seccond-items a{
+    text-decoration: none;
+    color: orange;
+}
+.footer .right button{
+    position: fixed;
+   bottom: 0;
+   right: 0;
+   margin: 20px;
+   padding: 5px;
+   font-size: 22px;
+}
+@media (max-width: 767px){
+    .footer .left{
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    .footer .right{
+        display: flex;
+        flex-direction: column-reverse;
+        gap: 15px;
+    }
+    .footer .seccond-items a{
+        font-size: 20px;
+    }
+}

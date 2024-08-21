@@ -1,0 +1,98 @@
+.header {
+  display: flex;
+  background: rgba(0, 0, 0, 0.5);
+  background: linear-gradient(#21220279, rgba(17, 23, 1, 0.489), rgba(242, 244, 236, 0.763));
+  justify-content: space-between;
+  align-items: center;
+  font-size: 2.5rem;
+  padding: 0px 20px;
+  position: sticky;
+  top: 0;
+  z-index: 1000; /* Optional: to ensure it stays on top */
+}
+
+.header .logo .mowlid {
+  color: yellow;
+}
+
+.header .logo .cali {
+  color: wheat;
+}
+
+.header .nav {
+  font-size: 1.5rem;
+  display: flex;
+  gap: 30px;
+}
+
+.header a {
+  text-decoration: none;
+  color: white;
+}
+
+.active {
+  border-bottom: 5px solid blue;
+  border-radius: 5px;
+}
+
+.header .carts {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.header .carts .cart {
+  padding: 15px;
+  position: relative;
+}
+
+.header .carts .count {
+  position: absolute;
+  top: 0;
+  right: 0;
+  color: white;
+}
+
+.header .carts .humbeger {
+  display: none;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .header .nav {
+    display: none;
+    background: linear-gradient(#275c03, rgba(198, 19, 198, 0.847), rgba(27, 3, 27, 0.523));
+    flex-direction: column;
+    width: 100%;
+    height: 1000px;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    text-align: center;
+  }
+
+  .header .nav.open {
+    display: flex;
+  }
+
+  .header .nav a {
+    width: 100%;
+    padding: 15px 0;
+    border-bottom: 1px solid #ccc;
+  }
+
+  .header .carts .humbeger {
+    display: block;
+  }
+
+  .header .open {
+    display: block;
+    position: absolute;
+  }
+}
+
+@media (max-width: 480px) {
+  .header .nav a {
+    font-size: 14px;
+  }
+}
