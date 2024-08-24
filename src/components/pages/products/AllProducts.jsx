@@ -1,6 +1,6 @@
 import React from 'react'
 import "./AllProducts.css"
-import HeroImage from "../../../asets/images/HeroImage.jpg"
+import HeroImage from "../../../asets/images/mowlid.jpg"
 import { FaHandPointDown, FaTiktok } from 'react-icons/fa6'
 import { FaTelegram } from 'react-icons/fa6'
 import AllProductsData from "../../../asets/AllProductsData"
