@@ -1,7 +1,6 @@
-import React, { useEffect, useState } from 'react'
-import "./products.css"
+import React, { useEffect, useState } from 'react';
 import useShop from "../contex/shopContext";
-
+import "./Products.css"
 function products({ product }) {
 
   const {title, image, price, id} = product;
